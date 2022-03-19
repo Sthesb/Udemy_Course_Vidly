@@ -1,0 +1,22 @@
+﻿@model UdemyVidly.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var error = Model.Customers.Count == 0 ? "text-warning" : null;
+}
+
+
+
+<h2>@Model.Movie.MovieName</h2>
+@if(Model.Customers.Count == 0)
+{
+    <p class="@error">No one has rented this movie yet</p>
+}
+<ul>
+    @foreach (var Customer in Model.Customers)
+    {
+        <li>@Customer.CustomerName</li>
+    }
+
+</ul>
