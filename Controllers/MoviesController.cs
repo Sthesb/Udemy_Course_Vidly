@@ -12,41 +12,23 @@ namespace UdemyVidly.Controllers
     {
         // GET: Movies
 
-        public ActionResult Index(int? pageIndex, string sortBy)
+        public ActionResult Index()
         {
-            if (!pageIndex.HasValue)
-                pageIndex = 1;
-            if (String.IsNullOrWhiteSpace(sortBy))
-                sortBy = "MovieName";
+            var movies = GetMovies();
 
-            return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+            return View(movies);
         }
 
         // GET: movies/random
-        public ActionResult Random()
-        {
-            var movie = new Movie() { MovieName = "Shrek!" };
 
-            var customers = new List<Customer>
-            {
-                new Customer { CustomerName = "Sthembiso"},
-                new Customer { CustomerName = "Goodness"}
-            };
-
-            var viewModel = new RandomMovieViewModel
-            {
-                Movie = movie,
-                Customers = customers
-            };
-
-            return View(viewModel);
-
-
-        }
-        public ActionResult Edit(int id)
+        public IEnumerable<Movie> GetMovies()
         {
             
-            return Content("id " + id);
+            return new List<Movie>
+            {
+                new Movie { MovieId=1,  MovieName = "Shrek!"},
+                new Movie { MovieId=2, MovieName = "Lord of the rings"}
+            };
         }
 
 
