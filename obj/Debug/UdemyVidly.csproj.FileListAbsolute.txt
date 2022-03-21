@@ -108,3 +108,4 @@ C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.dll
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.pdb
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.InitialModel.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.csproj.GenerateResource.cache
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddIsSubscribedToNewsLetter.resources

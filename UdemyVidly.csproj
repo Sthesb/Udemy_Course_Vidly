@@ -179,6 +179,10 @@
     <Compile Include="Migrations\202203210954407_InitialModel.Designer.cs">
       <DependentUpon>202203210954407_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203211041454_AddIsSubscribedToNewsLetter.cs" />
+    <Compile Include="Migrations\202203211041454_AddIsSubscribedToNewsLetter.Designer.cs">
+      <DependentUpon>202203211041454_AddIsSubscribedToNewsLetter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -190,6 +194,7 @@
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -271,6 +276,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202203210954407_InitialModel.resx">
       <DependentUpon>202203210954407_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203211041454_AddIsSubscribedToNewsLetter.resx">
+      <DependentUpon>202203211041454_AddIsSubscribedToNewsLetter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
