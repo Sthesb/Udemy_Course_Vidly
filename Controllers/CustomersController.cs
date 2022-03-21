@@ -9,29 +9,37 @@ namespace UdemyVidly.Controllers
 {
     public class CustomersController : Controller
     {
+        public ApplicationDbContext _context;
+
+        // constructor
+        public CustomersController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        // dispose db context
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+
+
         // GET: Costomers
         public ActionResult Index()
         {
-            var customers = GetCustomers();
+            var customers = _context.Customers.ToList();
             return View(customers);
         }
 
         // GET: Customer Details
         public ActionResult Details(int id)
         {
-            var customer = GetCustomers().SingleOrDefault(c => c.CustomerId == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.CustomerId == id);
             return View(customer);
         }
 
 
-        // list of customers
-        public IEnumerable<Customer> GetCustomers()
-        {
-            return new List<Customer>
-            {
-                new Customer { CustomerId = 1, CustomerName = "Sthembiso Mathebula"},
-                new Customer { CustomerId = 2, CustomerName = "Goodness Simelane"},
-            };
-        }
+        
     }
 }

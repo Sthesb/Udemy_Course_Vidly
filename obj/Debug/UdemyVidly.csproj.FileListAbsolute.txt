@@ -111,3 +111,4 @@ C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.csproj.GenerateResource.
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddIsSubscribedToNewsLetter.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddMembershipType.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateMembershipTypes.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.ApplyAnnatationsToCustomerName.resources
