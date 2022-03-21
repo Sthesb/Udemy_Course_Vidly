@@ -112,3 +112,5 @@ C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddIsSubscrib
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddMembershipType.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateMembershipTypes.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.ApplyAnnatationsToCustomerName.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddNameToMembershipTypes.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateNameInMembershipTypes.resources
