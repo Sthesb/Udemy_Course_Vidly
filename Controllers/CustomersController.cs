@@ -36,7 +36,7 @@ namespace UdemyVidly.Controllers
         // GET: Customer/Details/{id}
         public ActionResult Details(int id)
         {
-            var customer = _context.Customers.SingleOrDefault(c => c.CustomerId == id);
+            var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.CustomerId == id);
             return View(customer);
         }
 

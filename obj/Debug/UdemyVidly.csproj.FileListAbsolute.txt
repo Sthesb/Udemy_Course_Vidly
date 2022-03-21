@@ -114,3 +114,8 @@ C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateMembe
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.ApplyAnnatationsToCustomerName.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddNameToMembershipTypes.resources
 C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateNameInMembershipTypes.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddBirthDateToCustomer.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddGenres.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddGenreReleaseDateNumberInStockToMovie.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.PopulateGenres.resources
+C:\xampp2\htdocs\New\C#\UdemyVidly\obj\Debug\UdemyVidly.Migrations.AddDateAddedToMovies.resources
