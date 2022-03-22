@@ -1,0 +1,35 @@
+﻿@model UdemyVidly.ViewModels.NewCustomerViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Customer</h2>
+@using (Html.BeginForm("Store", "Customers"))
+{
+    <div class="form-group">
+        @Html.LabelFor(c => c.Customer.CustomerName) 
+        @Html.TextBoxFor(c => c.Customer.CustomerName, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(c => c.Customer.BirthDate) (eg: 01 Jan 1900)
+        @Html.TextBoxFor(c => c.Customer.BirthDate, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+
+            <label class="form-check-label" for="flexCheckDefault">
+                @Html.CheckBoxFor(c => c.Customer.IsSubscribedToNewsLetter)  Subcribed To NewsLetter ?
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(c => c.Customer.MembershipTypeId)
+        @Html.DropDownListFor(c => c.Customer.MembershipTypeId, 
+            new SelectList(Model.MembershipTypes, "Id", "MembershipName"), 
+            "Select membership type", 
+            new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+

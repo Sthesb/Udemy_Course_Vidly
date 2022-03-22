@@ -17,14 +17,18 @@ else
             <tr>
                 <th>Customer</th>
                 <th>Membership</th>
+                <th>
+                    @Html.ActionLink("Add New", "create", "customers", null, new { @class = "btn btn-primary" })
+                </th>
             </tr>
         </thead>
         <tbody>
             @foreach (var customer in Model)
             {
                 <tr>
-                    <td>@Html.ActionLink(customer.CustomerName, "Details", "Customers", new { id = customer.CustomerId }, null)</td>
+                    <td>@Html.ActionLink(customer.CustomerName, "details", "customers", new { id = customer.CustomerId }, null)</td>
                     <td>@customer.MembershipType.MembershipName</td>
+                    <td><a href="#" class="btn btn-warning" >Update</a></td>
                 </tr>
             }
         </tbody>
